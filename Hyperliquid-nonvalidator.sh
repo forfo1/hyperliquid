@@ -29,18 +29,28 @@ press_any_key() {
     read -n 1 -s  # -n 1 reads 1 character, -s hides the input
 }
 
-# Install KOREAN
 
-print_color "36" "Install KOREAN"
+# Function check if Korean
+check_korean_support() {
+    if locale -a | grep -q "ko_KR.utf8"; then
+        return 0  # Korean support is installed
+    else
+        return 1  # Korean support is not installed
+    fi
+}
 
-sudo apt-get install language-pack-ko -y
+# Install KOREAN if not 
+if check_korean_support; then
+    print_color "36" "한글있긔 설치넘기긔."
+else
+    print_color "36" "Installing Korean language support..."
+    sudo apt-get install language-pack-ko -y
+    sudo locale-gen ko_KR.UTF-8
+    sudo update-locale LANG=ko_KR.UTF-8 LC_MESSAGES=POSIX
+    print_color "36" "한글설치완료"
+fi
 
-sudo locale-gen ko_KR.UTF-8
 
-sudo update-locale LANG=ko_KR.UTF-8 LC_MESSAGES=POSIX
-
-
-print_color "36" "한글설치완료"
 
 
 # 
