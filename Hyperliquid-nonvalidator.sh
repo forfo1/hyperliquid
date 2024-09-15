@@ -97,7 +97,7 @@ print_color "31" "이제 hluser에서 ~/hl-visor run-non-validator 커맨드로 
 
 print_color "31" "hluser로 접속, su - hluser" 
 print_color "32" "스크린을 만들고, screen -S hl" 
-print_color "33" "노드 실행커맨드, ~/hl-visor run-non-validator" 
+print_color "33" "노드 실행커맨드, ~/hl-visor run-non-validator --evm" 
 print_color "34" "깃헙 확인" 
 print_color "36" "깃헙 확인" 
 press_any_key
