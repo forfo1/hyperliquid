@@ -61,7 +61,7 @@ echo "validator address (지갑 주소):"
 ## 4
 
 **[Hyperliquid 퍼셋](https://app.hyperliquid-testnet.xyz/drip)**    
-현재 아비트럼 세폴리아 네트워크.    
+**[아비트럼 세폴리아 네트워크](https://chainlist.org/?search=arbitrum+sepolia&testnets=true)**        
 
 ETH, USDC 퍼셋 받아두기.    
 *(근데 쌩지갑이라 그런지 ETH 안받아짐. 본지갑으로 퍼셋 받고 0.01ETH만 보내시긔 그럼 USDC는 받아짐.)*
