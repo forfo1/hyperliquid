@@ -73,6 +73,22 @@ ETH, USDC 퍼셋 받아두기.
 
 **[하이퍼리퀴드 디스코드](https://discord.com/invite/hyperliquid)**
 
+## 4.1
+아비트럼 세폴리아 네트워크 추가안될때.   
+
+**Network name**    
+Arbitrum Sepolia    
+**New RPC URL**    
+https://sepolia-rollup.arbitrum.io/rpc    
+**Cahin ID**    
+421614    
+**Currency symol**    
+ETH    
+**Block explorer URL**    
+https://sepolia.arbiscan.io    
+
+
+
 
 
 ## 개인적인생각
