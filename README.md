@@ -88,7 +88,30 @@ ETH
 https://sepolia.arbiscan.io    
 
 
+## 5
+로그정리
 
+콘타보 로그인하기.    
+hluser로 접속하기.
+```
+su - hluser
+```
+
+
+**당장 용량필요할때**
+```
+find /home/hluser/hl/data -type f -mtime +7 -delete
+```
+일주일 이상 지난 로그 지우는 명령어긔.
+
+
+**매일 자동으로 일주일 지난 로그 지우게 설정하기**
+```
+CRON_JOB="0 0 * * * find /home/hluser/hl/data -type f -mtime +7 -delete"
+
+(crontab -l 2>/dev/null; echo "$CRON_JOB") | crontab -
+```
+한번에 전부 복사해서 집어넣기. 매일 밤 12시에 작동해요~
 
 
 ## 개인적인생각
